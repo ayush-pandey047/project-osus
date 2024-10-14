@@ -1,0 +1,21 @@
+def Loss(costPrice, sellingPrice) :
+
+	Loss = (costPrice - sellingPrice)
+
+	return Loss
+
+
+if __name__ == "__main__" :
+
+	costPrice, sellingPrice =map(int,input().split())
+
+	if sellingPrice == costPrice :
+		print("No profit nor Loss")
+
+	elif sellingPrice > costPrice :
+		print(Profit(costPrice, 
+					sellingPrice), "Profit")
+
+	else :
+		print(Loss(costPrice, 
+				sellingPrice), "Loss")
